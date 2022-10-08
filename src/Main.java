@@ -1,18 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-    int amount = 100;
-    boolean put = true;
-    int x = 100;
-    if (x < 1000) {
-        System.out.println("Бонусов нет");
-    } else {
-        System.out.println("Бонус 1 рубль");
-    }
-    int bonus = amount + 100;
-    if (bonus < 1) {
-        bonus = 1;
-    }
+        int score =100;
+        int depositAccount =100;
+        int bonus;
 
-        System.out.println("сумма рублей:" + bonus);
-  }
+        if (depositAccount > 1000) {
+            bonus = depositAccount / 100;
+        }
+        else {
+            bonus = 0;
+        }
+
+        int balance = score + depositAccount + bonus;
+        System.out.println("Спасибо за оплату. Ваш баланс: " + balance + " руб. Бонус составляет: " + bonus + " руб.");
+    }
 }
